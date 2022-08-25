@@ -80,7 +80,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://gitea.com/bao523/bao/raw/branch/main/bao.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
