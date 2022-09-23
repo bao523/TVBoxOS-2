@@ -80,7 +80,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://download.kstore.space/download/3245/bao.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://raw.fastgit.org/bao523/bao/main/bao.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
