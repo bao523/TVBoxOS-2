@@ -127,7 +127,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://www.gitlink.org.cn/attachments/entries/get_file?download_url=https://www.gitlink.org.cn/api/bao523/bao/raw/bao.json?ref=master");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
